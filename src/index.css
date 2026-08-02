@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  --color-active: var(--color-primary-500);
+
+  /* Tipografía hand-drawn para el tema */
+  --font-doodle: "Architects Daughter", cursive;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Plus Jakarta Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fcfcf9;
+  color: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   ESTILOS DOODLE / HAND-DRAWN
+   ========================================== */
+
+/* Fuente manuscrita para títulos o destacados */
+.font-doodle {
+  font-family: var(--font-doodle);
+}
+
+/* Borde asimétrico estilo trazo a mano libre */
+.doodle-border {
+  border: 1px solid #1a1a1a;
+  border-radius: 12px 18px 14px 20px;
+}
+
+/* Borde asimétrico más grueso para botones o cards principales */
+.doodle-border-lg {
+  border: 3px solid #1a1a1a;
+  border-radius: 16px 22px 18px 24px;
+}
+
+/* Sombra desplazada retro/dibujo */
+.doodle-shadow {
+  box-shadow: 4px 4px 0px #1a1a1a;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Efecto presionar botón doodle */
+.doodle-button {
+  border: 2px solid #1a1a1a;
+  border-radius: 12px 18px 14px 20px;
+  box-shadow: 3px 3px 0px #1a1a1a;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.doodle-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+.doodle-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #1a1a1a;
+}
+
+/* Variaciones de inclinación leve para que las tarjetas parezcan dibujadas */
+.doodle-tilt-left {
+  transform: rotate(-0.8deg);
+}
+
+.doodle-tilt-right {
+  transform: rotate(0.8deg);
+}
+
+/* Efecto subrayado estilo marcador/lápiz */
+.doodle-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.doodle-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-primary-400);
+  border-radius: 6px 10px 8px 12px;
+  z-index: -1;
+}

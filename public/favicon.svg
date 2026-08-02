@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <desc>Doodle Image Splitter Favicon</desc>
+  
+  <!-- Líneas de corte punteadas de fondo (Las tijeras/solapamiento) -->
+  <path d="M 16 2 Q 15 16 16.5 30" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="3 3" stroke-linecap="round" />
+  <path d="M 2 16 Q 16 17 30 15.5" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="3 3" stroke-linecap="round" />
+  
+  <!-- Hoja Superior Izquierda (Pintada con tu color primary-200) -->
+  <path d="M 4 4 Q 9 3 13 5 Q 14 9 12 13 Q 8 14 4 12 Q 3 8 4 4 Z" fill="#bfdbfe" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Hoja Superior Derecha -->
+  <path d="M 19 4 Q 24 5 28 3 Q 29 8 27 13 Q 23 12 19 14 Q 18 9 19 4 Z" fill="#ffffff" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Hoja Inferior Izquierda -->
+  <path d="M 5 19 Q 9 18 13 20 Q 12 24 14 28 Q 9 29 4 27 Q 3 23 5 19 Z" fill="#ffffff" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Hoja Inferior Derecha (Pintada con tu color primary-300) -->
+  <path d="M 19 18 Q 24 20 28 19 Q 27 24 29 28 Q 24 29 19 27 Q 18 23 19 18 Z" fill="#93c5fd" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
