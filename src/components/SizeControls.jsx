@@ -14,9 +14,9 @@ export default function SizeControls({
 
   useEffect(() => {
     if (dimension === "height") {
-      setValue(fromMm(finalHeightMm, unit));
+      setValue(Number(fromMm(finalHeightMm, unit).toFixed(1)));
     } else {
-      setValue(fromMm(finalWidthMm, unit));
+      setValue(Number(fromMm(finalWidthMm, unit).toFixed(1)));
     }
   }, [finalWidthMm, finalHeightMm, dimension, unit]);
 
@@ -41,11 +41,11 @@ export default function SizeControls({
         Tamaño final
       </label>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex gap-2">
         <select
           value={dimension}
           onChange={(e) => setDimension(e.target.value)}
-          className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm"
+          className="form-input flex-1 min-w-0 px-2 sm:px-3 py-2 text-sm cursor-pointer"
         >
           <option value="height">Alto</option>
           <option value="width">Ancho</option>
@@ -57,13 +57,13 @@ export default function SizeControls({
           onChange={(e) => handleChange(e.target.value)}
           step="0.1"
           min="0.1"
-          className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm w-fit"
+          className="form-input flex-1 min-w-0 px-2 sm:px-3 py-2 text-sm"
         />
 
         <select
           value={unit}
           onChange={(e) => setUnit(e.target.value)}
-          className="w-20 border border-gray-300 rounded-lg px-3 py-2 text-sm"
+          className="form-input w-16 sm:w-20 flex-shrink-0 px-1 sm:px-3 py-2 text-sm cursor-pointer"
         >
           {UNITS.map((u) => (
             <option key={u} value={u}>
@@ -81,3 +81,5 @@ export default function SizeControls({
     </section>
   );
 }
+
+

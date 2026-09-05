@@ -17,10 +17,12 @@ export default function DpiSelector({ dpi, onDpiChange }) {
       </div>
 
       <p className="text-xs text-gray-500">
-        {dpi <= 150 && "Bueno para pósters vistos de lejos"}
+        {dpi === 72 && "Borrador rápido / visualización"}
+        {dpi === 150 && "Recomendado para pósters vistos de lejos"}
         {dpi === 300 && "Calidad fotográfica estándar"}
-        {dpi >= 600 && "Alta calidad (archivos más grandes)"}
+        {dpi === 600 && "Máxima definición (archivos grandes)"}
       </p>
     </div>
   );
 }
+

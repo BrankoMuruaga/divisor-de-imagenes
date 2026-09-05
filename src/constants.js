@@ -1,5 +1,5 @@
 // DPI soportados
-export const DPI_OPTIONS = [72, 150, 300];
+export const DPI_OPTIONS = [72, 150, 300, 600];
 export const DEFAULT_DPI = 150;
 
 // Límites de archivo
@@ -23,3 +23,5 @@ export const OUTPUT_FORMATS = {
 // Margen de impresora por defecto (en mm)
 export const DEFAULT_MARGIN = 5;
 export const MAX_MARGIN = 20;
+
+
